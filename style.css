@@ -1,0 +1,25 @@
+/*
+ Theme Name:   Twenty 17 Child
+ Theme URI:    http://example.com/twenty-17-child/
+ Description:  Twenty 17 Child Theme
+ Author:       Marko
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-17-child
+*/
+
+
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a
+{
+    color: #dfdfdf;
+}
+
+body.has-header-image .site-description, body.has-header-video .site-description {
+    color: #000;
+}
+
+
