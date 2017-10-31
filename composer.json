@@ -1,0 +1,7 @@
+{
+    "name": "markopoikkimaki/twentyseventeen-child",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "fzaninotto/faker": "^1.7"
+    }
+}
