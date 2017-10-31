@@ -23,6 +23,8 @@ function create_post_type() {
             ),
             'public' => true,
             'has_archive' => true,
+            'show_in_menu' => true,
+            'show_in_rest' => true,
         )
     );
 }

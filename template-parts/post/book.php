@@ -4,6 +4,8 @@
    $isbn13 = get_field('isbn-13', $postId);
    $amazon_link = get_field('amazon_link', $postId);
    $author = get_field('author', $postId);
+   $publisher = get_field('publisher', $postId);
+   $pages = get_field('pages', $postId);
 
    function book_title() {
         if ( is_single() ) {
@@ -65,13 +67,21 @@
         ) );
         ?>
     </div><!-- .entry-content -->
-    <div>
+    <div class="books-custom-fields" >
         <?php if($isbn10 != false): ?>
-            <p>ISBN-10: <?php echo $isbn10; ?></p>
+            <p class="book-custom-field" >ISBN-10: <?php echo $isbn10; ?></p>
         <?php endif; ?>
 
         <?php if($isbn13 != false): ?>
-            <p>ISBN-13: <?php echo $isbn13; ?></p>
+            <p class="book-custom-field" >ISBN-13: <?php echo $isbn13; ?></p>
+        <?php endif; ?>
+
+        <?php if($publisher != false): ?>
+            <p class="book-custom-field">Publisher: <?php echo $publisher; ?></p>
+        <?php endif; ?>
+
+        <?php if($pages != false): ?>
+            <p class="book-custom-field" >Pages: <?php echo $pages; ?></p>
         <?php endif; ?>
     </div>
 

@@ -22,4 +22,8 @@ body.has-header-image .site-description, body.has-header-video .site-description
     color: #000;
 }
 
+.books-custom-fields .book-custom-field {
+    margin: 0 0 0.3em;
+}
+
 
