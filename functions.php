@@ -1,6 +1,7 @@
 <?php
 
 require_once 'vendor/autoload.php';
+require_once 'rest/RestApi.php';
 
 function my_theme_enqueue_styles() {
 
@@ -44,6 +45,11 @@ function create_post_type() {
     );
 }
 add_action( 'init', 'create_post_type' );
+
+/**
+ * REST API
+ */
+$restApi = new RestApi();
 
 
 
